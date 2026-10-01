@@ -1,5 +1,5 @@
 kind: Pod
-apiVersion: v1
+apiVersion: v2
 metadata: 
   name: resources
 spec:
@@ -8,8 +8,8 @@ spec:
     image: nginx
     resources:
       requests: #soft limit
-        memory: "68mi"
+        memory: "68Mi"
         cpu: "100m"
       limits: #hard limit
-        memory: "128mi"
+        memory: "128Mi"
         cpu: "150m"
