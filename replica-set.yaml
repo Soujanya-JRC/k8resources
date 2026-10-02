@@ -15,12 +15,12 @@ spec:
       app: frontend
       tier: web
     #pod template/pod definition
-template:
-  metadata:
-    labels:
-      app: frontend
-      tier: web
-  spec:
-    containers:
-    - name: nginx
-      image: nginx
+  template:
+    metadata:
+      labels:
+        app: frontend
+        tier: web
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
