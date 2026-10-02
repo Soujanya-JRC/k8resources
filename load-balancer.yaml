@@ -9,7 +9,7 @@ spec:
     component : backend
     environmnet: dev 
     version: "1.0.0"
-    demo: np
+    demo: lb
   ports:
   - protocol: TCP
     port: 80 #service port
@@ -26,7 +26,7 @@ metadata:
     component : backend
     environmnet: dev 
     version: "1.0.0"
-    demo: np
+    demo: lb
 spec:
   containers:
   - name: nginx
