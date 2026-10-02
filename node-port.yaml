@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: nginx-NodePort
+  name: nginx-np
 spec:
   type: NodePort
   selector: # labels are used as selectors
@@ -19,7 +19,7 @@ spec:
 kind: Pod
 apiVersion: v1
 metadata:
-  name: backend-NodePort
+  name: backend-np
   labels:
     project : expense
     component : backend
