@@ -3,9 +3,9 @@ kind: ReplicaSet
 metadata:
   name: nginx
   #these labels are replicaset labels
-labels:
-  app: frontend
-  tier: web
+  labels:
+    app: frontend
+    tier: web
 spec:
 #modify replicas according to your case
   replicas: 3
